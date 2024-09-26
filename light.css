@@ -1,0 +1,20 @@
+body {
+    background-color: white;
+}
+
+a, p, i, button, input {
+    color: black;
+}
+
+#grid {
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #d9d9d9;
+}
+
+.sidebar {
+    background-color: #f1c232;
+    color: black;
+}

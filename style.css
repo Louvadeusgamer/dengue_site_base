@@ -1,0 +1,101 @@
+#grid {
+    display: grid;
+    text-align: center;
+    gap: 2px;
+    height: 500px;
+    
+}
+
+.showSB {
+    grid-template: 10% 85% 15% / 35% 35% 30%;
+    grid-template-areas: 
+    "header header sidebar"
+    "main main sidebar"
+    "footer footer footer";
+}
+.hideSB {
+    grid-template: 10% 85% 15% / 35% 60% 5%;
+    grid-template-areas: 
+    "header header sidebar"
+    "main main sidebar"
+    "footer footer footer";
+}
+
+
+
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    #search {
+        width: 75%;
+        height: 70%;
+        border-radius: 5px;
+        font-size: large;
+        margin-left: 5%;
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    .loginButton.div {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .loginButton.text {
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 7px 10px;
+        margin: 5px 2px 15px 0;
+    }
+    .sideBarButton {
+        border: 1px solid;
+        border-width: 1px 0;
+        padding: 7px 0;
+        background-color: #00000000;
+    }
+    button {
+        padding: 7px 10px;
+        display: inline;
+        width: 100%;
+    }
+    .sideBarClose {
+        padding: 15px;
+        background-color: #00000000;
+        border-color: #00000000;
+        i {
+            font-size: 25px;
+        }
+    }
+}
+
+.main {
+    grid-area: main;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizY5b4F_ehV-BhEYZgIRxAea9LR-f9VtQr3gaDGiOWLsCCRhDCHnrVE92hgVUj0nR6SciRzME0bIO_kZN1vcHrc-wWHvwc4S6NlqC33Sjtt9L2XVxayUF_rCxyJ5qMwYdQV3E6WZU_Rqw/s640/mapa_florianopolis_rodoviario.jpg");
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media (max-width: 600px) {
+    .showSB {
+        grid-template: 10% 85% 15% / 0 0 100%;
+        grid-template-areas: 
+        "header header sidebar"
+        "main main sidebar"
+        "footer footer footer";
+    }
+    .hideSB {
+        grid-template: 10% 85% 15% / 35% 45% 20%;
+        grid-template-areas: 
+        "header header sidebar"
+        "main main main"
+        "footer footer footer";
+    }
+}

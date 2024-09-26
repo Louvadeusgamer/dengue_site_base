@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+a, p, i, button, input {
+    color: white;
+}
+
+.grid {
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #323232;
+    input {
+        background-color: #434343;
+    }
+}
+
+.sidebar {
+    background-color: #3c78d8;
+    color: white;
+}

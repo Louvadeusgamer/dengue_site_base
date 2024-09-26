@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="hideSB" id="grid">
+        
+        <div class="header gridItem">
+            <input type="text" placeholder="Pesquisar cidades" id="search">
+        </div>  
+
+        <div class="sidebar gridItem" id="SB">
+            <button onclick="sideBarChange()" class="sideBarClose"><i class="bi bi-list"></i></button>
+            <div class="loginButton div">
+                <a href="#" class="loginButton text" id="loginButton"><i class="bi bi-person-fill"></i></a>
+            </div>
+            <a href="#" class="sideBarButton" id="SBI1"><i class="bi bi-person-raised-hand"></i></a>
+            <a href="#" class="sideBarButton" id="SBI2"><i class="bi bi-newspaper"></i></a>
+            <a href="#" class="sideBarButton" id="SBI3"><i class="bi bi-star-fill"></i></a>
+            <button onclick="changeTheme()" class="sideBarButton" id="theme"><i class="bi bi-moon-fill"></i></a>
+            
+            
+        </div>
+
+        <div class="main gridItem">
+            <p>(Não tem como interagir com o mapa ainda)</p>
+        </div>
+
+        <div class="footer gridItem">
+            <p>feito por alunos do</p>
+            <img src="https://static.wixstatic.com/media/b1bee2_89a74505528941edaacdca04158c6690.png/v1/fill/w_228,h_133,al_c,usm_0.66_1.00_0.01/b1bee2_89a74505528941edaacdca04158c6690.png" alt="">
+        </div>
+        <script src="theme.js"></script>
+        <script src="sidebar.js"></script>
+    </div>
+</body>
+</html>
