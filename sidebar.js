@@ -17,7 +17,7 @@ function sideBarChange() {
         SBItems[2].innerHTML = "<i class=\"bi bi-newspaper\"></i> ALERTA E NOTÍCIAS"
         SBItems[3].innerHTML = "<i class=\"bi bi-star-fill\"></i> PONTOS FAVORITOS"
         SBItems[4].innerHTML = "<i class=\"bi bi-moon-fill\"></i> ALTERAR TEMA"
-        SBItems[5].style.display = ""
+        SBItems[5].innerHTML = "(mapa de demonstração)"
         gridDOC.classList.replace("hideSB", "showSB")
     } else {
         sideBar = false
@@ -26,7 +26,7 @@ function sideBarChange() {
         SBItems[2].innerHTML = "<i class=\"bi bi-newspaper\"></i>"
         SBItems[3].innerHTML = "<i class=\"bi bi-star-fill\"></i>"
         SBItems[4].innerHTML = "<i class=\"bi bi-moon-fill\"></i>"
-        SBItems[5].style.display = "none"
+        SBItems[5].innerHTML = ""
         gridDOC.classList.replace("showSB", "hideSB")
     }
 }
